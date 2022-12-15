@@ -29,6 +29,7 @@ import { AllempentryComponent } from './allempentry/allempentry.component';
 import { EmployeeloginComponent } from './employeelogin/employeelogin.component';
 import { EmphomeComponent } from './emphome/emphome.component';
 import { EmpnavComponent } from './empnav/empnav.component';
+import { AppleaveComponent } from './appleave/appleave.component';
 
 
 
@@ -102,7 +103,12 @@ const myRouter:Routes=[
   {
     path:"emphome",
     component:EmphomeComponent
-  }
+  },
+  {
+    path:"applyleave",
+    component:AppleaveComponent
+  },
+
 
 
 
@@ -138,6 +144,7 @@ const myRouter:Routes=[
     EmployeeloginComponent,
     EmphomeComponent,
     EmpnavComponent,
+    AppleaveComponent,
   
   
     
