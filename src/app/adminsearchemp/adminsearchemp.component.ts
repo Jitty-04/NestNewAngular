@@ -7,8 +7,9 @@ import { ApiService } from '../api.service';
   templateUrl: './adminsearchemp.component.html',
   styleUrls: ['./adminsearchemp.component.css']
 })
-export class AdminsearchempComponent {empcode=""
-constructor(private api:ApiService){}
+export class AdminsearchempComponent {
+  empcode=""
+constructor(private api:ApiService,private router:Router){}
 
 searchData:any=[]
   readValue=()=>
@@ -28,5 +29,21 @@ searchData:any=[]
     )
   }
 
+  deleteBtnClick=(id:any)=>
+  {
+    let data:any={"id":id}
+    this.api.deleteEmployee(data).subscribe(
+      (response:any)=>
+      {
+        console.log(response)
+        if (response.status=="success") {
+          alert("employ deleted successfully")
+          window.location.reload()
+        } else {
+          alert("can not delete")
+        }
+      }
+    )
+  }
 
 }

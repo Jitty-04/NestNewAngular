@@ -25,7 +25,7 @@ constructor(private api:ApiService){}
       {
         console.log(response)
         if (response.status=="success") {
-          alert("employ added successfully")
+          alert("employee added successfully")
           this.empcode=""
           this.empname=""
           this.designation=""
