@@ -10,6 +10,10 @@ import { AdminComponent } from './admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import { AdminnavComponent } from './adminnav/adminnav.component';
 import { AdminhomeComponent } from './adminhome/adminhome.component';
+import { EmpaddComponent } from './empadd/empadd.component';
+import {HttpClientModule} from '@angular/common/http';
+import { AddempnavComponent } from './addempnav/addempnav.component';
+
 
 const myRouter:Routes=[
   {
@@ -23,6 +27,10 @@ const myRouter:Routes=[
   {
     path:"adminhome",
     component:AdminhomeComponent
+  },
+  {
+    path:"addemp",
+    component:EmpaddComponent
   }
  
 
@@ -36,14 +44,17 @@ const myRouter:Routes=[
     HomenavComponent,
     AdminComponent,
     AdminnavComponent,
-    AdminhomeComponent
+    AdminhomeComponent,
+    EmpaddComponent,
+    AddempnavComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRouter),
-    FormsModule
+    FormsModule,
+    HttpClientModule
     
   ],
   providers: [],
