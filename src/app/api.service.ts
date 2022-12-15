@@ -48,5 +48,9 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/logvisitor",data)
   }
+  addEmpLog=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/logemp",data)
+  }
 
 }
