@@ -22,6 +22,7 @@ import { AdminviewswcurityComponent } from './adminviewswcurity/adminviewswcurit
 import { SecurityloginComponent } from './securitylogin/securitylogin.component';
 import { SecurityhomenavComponent } from './securityhomenav/securityhomenav.component';
 import { SecurityhomeComponent } from './securityhome/securityhome.component';
+import { VistoraddentryComponent } from './vistoraddentry/vistoraddentry.component';
 
 
 
@@ -71,6 +72,11 @@ const myRouter:Routes=[
     path:"securityhome",
     component:SecurityhomeComponent
   },
+  {
+    path:"visitorentry",
+    component:VistoraddentryComponent
+  }
+
 
 
  
@@ -97,6 +103,7 @@ const myRouter:Routes=[
     SecurityloginComponent,
     SecurityhomenavComponent,
     SecurityhomeComponent,
+    VistoraddentryComponent,
   
     
   ],
