@@ -16,6 +16,8 @@ import { AddempnavComponent } from './addempnav/addempnav.component';
 import { AdminviewempComponent } from './adminviewemp/adminviewemp.component';
 import { AdminsearchempComponent } from './adminsearchemp/adminsearchemp.component';
 import { ViewallleaveComponent } from './viewallleave/viewallleave.component';
+import { AddsecurityComponent } from './addsecurity/addsecurity.component';
+import { AdminsecuritynavComponent } from './adminsecuritynav/adminsecuritynav.component';
 
 
 
@@ -48,6 +50,10 @@ const myRouter:Routes=[
   {
     path:"viewleave",
     component:ViewallleaveComponent
+  },
+  {
+    path:"addsecurity",
+    component:AddsecurityComponent
   }
  
 
@@ -67,6 +73,8 @@ const myRouter:Routes=[
     AdminviewempComponent,
     AdminsearchempComponent,
     ViewallleaveComponent,
+    AddsecurityComponent,
+    AdminsecuritynavComponent,
   
     
   ],
