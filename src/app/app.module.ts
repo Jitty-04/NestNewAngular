@@ -15,6 +15,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { AddempnavComponent } from './addempnav/addempnav.component';
 import { AdminviewempComponent } from './adminviewemp/adminviewemp.component';
 import { AdminsearchempComponent } from './adminsearchemp/adminsearchemp.component';
+import { ViewallleaveComponent } from './viewallleave/viewallleave.component';
 
 
 
@@ -43,6 +44,10 @@ const myRouter:Routes=[
     path:"searchemp",
     component:AdminsearchempComponent
 
+  },
+  {
+    path:"viewleave",
+    component:ViewallleaveComponent
   }
  
 
@@ -61,6 +66,7 @@ const myRouter:Routes=[
     AddempnavComponent,
     AdminviewempComponent,
     AdminsearchempComponent,
+    ViewallleaveComponent,
   
     
   ],
