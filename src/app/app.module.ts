@@ -13,6 +13,7 @@ import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { EmpaddComponent } from './empadd/empadd.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AddempnavComponent } from './addempnav/addempnav.component';
+import { AdminviewempComponent } from './adminviewemp/adminviewemp.component';
 
 
 const myRouter:Routes=[
@@ -31,6 +32,10 @@ const myRouter:Routes=[
   {
     path:"addemp",
     component:EmpaddComponent
+  },
+  {
+    path:"viewemp",
+    component:AdminviewempComponent
   }
  
 
@@ -46,7 +51,8 @@ const myRouter:Routes=[
     AdminnavComponent,
     AdminhomeComponent,
     EmpaddComponent,
-    AddempnavComponent
+    AddempnavComponent,
+    AdminviewempComponent
     
   ],
   imports: [
