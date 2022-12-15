@@ -17,6 +17,7 @@ import { AdminviewempComponent } from './adminviewemp/adminviewemp.component';
 import { AdminsearchempComponent } from './adminsearchemp/adminsearchemp.component';
 
 
+
 const myRouter:Routes=[
   {
     path:"",
@@ -59,7 +60,8 @@ const myRouter:Routes=[
     EmpaddComponent,
     AddempnavComponent,
     AdminviewempComponent,
-    AdminsearchempComponent
+    AdminsearchempComponent,
+  
     
   ],
   imports: [
