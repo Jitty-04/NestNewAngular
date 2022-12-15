@@ -29,7 +29,7 @@ readValue=()=>
           let empId=response.empId
           console.log(empId)
           localStorage.setItem("userInfo",empId)
-          this.router.navigate(['/empviewprof'])
+          this.router.navigate(['/emphome'])
         }
         else{
           alert("Inalid credentials")

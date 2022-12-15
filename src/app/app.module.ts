@@ -27,6 +27,8 @@ import { EmpvisitorentryComponent } from './empvisitorentry/empvisitorentry.comp
 import { AllvisitorentryComponent } from './allvisitorentry/allvisitorentry.component';
 import { AllempentryComponent } from './allempentry/allempentry.component';
 import { EmployeeloginComponent } from './employeelogin/employeelogin.component';
+import { EmphomeComponent } from './emphome/emphome.component';
+import { EmpnavComponent } from './empnav/empnav.component';
 
 
 
@@ -96,6 +98,10 @@ const myRouter:Routes=[
   {
     path:"emplogin",
     component:EmployeeloginComponent
+  },
+  {
+    path:"emphome",
+    component:EmphomeComponent
   }
 
 
@@ -130,6 +136,8 @@ const myRouter:Routes=[
     AllvisitorentryComponent,
     AllempentryComponent,
     EmployeeloginComponent,
+    EmphomeComponent,
+    EmpnavComponent,
   
   
     
