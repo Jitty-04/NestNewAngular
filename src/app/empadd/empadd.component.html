@@ -1,0 +1,62 @@
+<app-addempnav></app-addempnav>
+<style>
+    .bgm    {
+            background-image:url('https://media.istockphoto.com/id/1270261573/vector/abstract-blue-vector-background-with-stripes-can-be-used-for-cover-design-poster-and.jpg?s=612x612&w=0&k=20&c=pT278vElVdPXjAtgAPLVu6ZHMQnMiKq0aiwWY-RgyoA=')
+    }
+</style>
+<div class="bgm" style="height:700px">
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-3 m-4">
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label"><b><h4>Employee Code</h4></b></label>
+                    <input name="empcode" [(ngModel)]="empcode" type="text" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label"><b><h4>Employee Name</h4></b></label>
+                    <input name="empname" [(ngModel)]="empname" type="text" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label"><b><h4>Designation</h4></b></label>
+                    <input name="designation" [(ngModel)]="designation" type="text" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label"><b><h4>Salary</h4></b></label>
+                    <input name="salary" [(ngModel)]="salary" type="text" class="form-control">
+
+                </div>
+                
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label"><b><h4>UserName</h4></b></label>
+                    <input name="username" [(ngModel)]="username" type="text" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label"><b><h4>Password</h4></b></label>
+                    <input type="password" name="password" [(ngModel)]="password" id="" class="form-control">
+                   
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+
+                    <button (click)="readValue()" class="btn btn-success">Submit</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
