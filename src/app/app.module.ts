@@ -9,6 +9,7 @@ import { HomenavComponent } from './homenav/homenav.component';
 import { AdminComponent } from './admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import { AdminnavComponent } from './adminnav/adminnav.component';
+import { AdminhomeComponent } from './adminhome/adminhome.component';
 
 const myRouter:Routes=[
   {
@@ -18,6 +19,10 @@ const myRouter:Routes=[
   {
     path:"admin",
     component:AdminComponent
+  },
+  {
+    path:"adminhome",
+    component:AdminhomeComponent
   }
  
 
@@ -30,7 +35,8 @@ const myRouter:Routes=[
     HomeComponent,
     HomenavComponent,
     AdminComponent,
-    AdminnavComponent
+    AdminnavComponent,
+    AdminhomeComponent
     
   ],
   imports: [
