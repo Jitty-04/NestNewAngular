@@ -15,6 +15,28 @@ export class AllempentryComponent {
       }
     )
   }
+  date=""
+  searchData:any=[]
+  readValue=()=>
+  {
+    let data:any={"date":this.date}
+    console.log(data)
+    this.api.viewDailyEmpLog(data).subscribe(
+      (response:any)=>
+      {
+        console.log(response)
+        if(response.length==0)
+        {
+          alert("invalid")
+        }
+        else{
+          this.data=[];
+          this.searchData=response
+        }
+      }
+    )
+
+  }
   data:any=[]
 }
 
