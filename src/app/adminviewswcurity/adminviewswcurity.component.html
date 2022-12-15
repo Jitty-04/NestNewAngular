@@ -1,0 +1,38 @@
+<app-adminsecuritynav></app-adminsecuritynav>
+<style>
+    .bgm {background-image: url('https://wallpaperaccess.com/full/4499624.png');}
+</style>
+<div class="bgm" style="height:1000px;">
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="container">
+            <div class="row g-3 m-4">
+             
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3" *ngFor="let i of data">
+                    
+                    <div  class="card"style="height: 20rem;" >
+                        <img height="180px" src="data:image/png;base64,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" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Empcode :{{i.empcode}} </h5>
+                        <p class="card-text">Name :{{i.name}}</p>
+                        <p class="card-text">Username : {{i.username}}</p>
+                       </div>
+                    </div>
+
+                </div>
+                
+           
+
+                
+            </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+
