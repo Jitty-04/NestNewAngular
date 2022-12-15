@@ -36,6 +36,13 @@ export class ApiService {
   {
     return this.http.get("http://localhost:8080/viewsecurity")
   }
-
+  securitylogin=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/securitylogin",data)
+  }
+  securityViewProf=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/securityprofile",data)
+  }
 
 }

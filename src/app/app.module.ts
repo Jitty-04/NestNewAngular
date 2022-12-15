@@ -19,6 +19,9 @@ import { ViewallleaveComponent } from './viewallleave/viewallleave.component';
 import { AddsecurityComponent } from './addsecurity/addsecurity.component';
 import { AdminsecuritynavComponent } from './adminsecuritynav/adminsecuritynav.component';
 import { AdminviewswcurityComponent } from './adminviewswcurity/adminviewswcurity.component';
+import { SecurityloginComponent } from './securitylogin/securitylogin.component';
+import { SecurityhomenavComponent } from './securityhomenav/securityhomenav.component';
+import { SecurityhomeComponent } from './securityhome/securityhome.component';
 
 
 
@@ -59,7 +62,17 @@ const myRouter:Routes=[
   {
     path:"viewsecurity",
     component:AdminviewswcurityComponent
-  }
+  },
+  {
+    path:"security",
+    component:SecurityloginComponent
+  },
+  {
+    path:"securityhome",
+    component:SecurityhomeComponent
+  },
+
+
  
 
   
@@ -81,6 +94,9 @@ const myRouter:Routes=[
     AddsecurityComponent,
     AdminsecuritynavComponent,
     AdminviewswcurityComponent,
+    SecurityloginComponent,
+    SecurityhomenavComponent,
+    SecurityhomeComponent,
   
     
   ],
