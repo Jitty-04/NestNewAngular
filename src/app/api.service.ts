@@ -12,4 +12,8 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/addemp",data)
   }
+  viewEmployee=()=>
+  {
+    return this.http.get("http://localhost:8080/viewemp")
+  }
 }
