@@ -23,6 +23,7 @@ import { SecurityloginComponent } from './securitylogin/securitylogin.component'
 import { SecurityhomenavComponent } from './securityhomenav/securityhomenav.component';
 import { SecurityhomeComponent } from './securityhome/securityhome.component';
 import { VistoraddentryComponent } from './vistoraddentry/vistoraddentry.component';
+import { EmpvisitorentryComponent } from './empvisitorentry/empvisitorentry.component';
 
 
 
@@ -75,7 +76,12 @@ const myRouter:Routes=[
   {
     path:"visitorentry",
     component:VistoraddentryComponent
+  },
+  {
+    path:"employeeentry",
+    component:EmpvisitorentryComponent
   }
+
 
 
 
@@ -104,6 +110,7 @@ const myRouter:Routes=[
     SecurityhomenavComponent,
     SecurityhomeComponent,
     VistoraddentryComponent,
+    EmpvisitorentryComponent,
   
     
   ],
