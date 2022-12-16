@@ -1,4 +1,8 @@
 <app-empnav></app-empnav>
+<style>
+    .bgm {background-image: url('https://mcnairminischool.files.wordpress.com/2021/12/scheduling.jpg');}
+</style>
+<div class="bgm" style="height: 650px; ">
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -6,13 +10,13 @@
             <div class="row g-3 m-4">
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
-                    <label for="" class="form-label">Employee Code</label>
+                    <label for="" class="form-label"><h4>Employee Code</h4></label>
                     <input name="empid" [(ngModel)]="empid" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
-                    <label for="" class="form-label">Leave Type</label>
+                    <label for="" class="form-label"><h4>Leave Type</h4></label>
                     <select name="leavetype" [(ngModel)]="leavetype" id="" class="form-control">
                         <option value="">Select</option>
                         <option value="casual">Casual Leave</option>
@@ -24,34 +28,34 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                    <label for="" class="form-label">Remarks</label>
+                    <label for="" class="form-label"><h4>Remarks</h4></label>
                     <input name="remarks" [(ngModel)]="remarks" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
-                    <label for="" class="form-label">From_date</label>
+                    <label for="" class="form-label"><h4>From_date</h4></label>
                     <input type="date" name="from_date" [(ngModel)]="from_date" id="" class="form-control">
                     
                 </div>
                 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
-                    <label for="" class="form-label">To_date</label>
+                    <label for="" class="form-label"><h4>To_date</h4></label>
                     <input type="date" name="to_date" [(ngModel)]="to_date" id="" class="form-control">
                     
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
-                    <label for="" class="form-label">Apply Date</label>
+                    <label for="" class="form-label"><h4>Apply Date</h4></label>
                     <input type="date" name="apply_date" [(ngModel)]="apply_date" id="" class="form-control">
                     
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
-                    <label for="" class="form-label">Status</label>
+                    <label for="" class="form-label"><h4>Status</h4></label>
                     <input type="text" name="status" [(ngModel)]="status" id="" class="form-control">
                     
 
@@ -67,6 +71,7 @@
 
         </div>
     </div>
+</div>
 </div>
 
 

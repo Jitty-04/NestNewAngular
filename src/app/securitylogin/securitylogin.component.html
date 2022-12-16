@@ -1,4 +1,8 @@
 <app-homenav></app-homenav>
+<style>
+    .bgm {background-image: url('https://wallpaperaccess.com/full/4499620.jpg');}
+</style>
+<div class="bgm" style="height:650px ;">
 <div class="container">
     <div class="row ">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -14,7 +18,7 @@
                     
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                        <label for="" class="form-label text">User Name</label>
+                        <label for="" class="form-label text"><h4>User Name</h4></label>
                         <input name="username" [(ngModel)]="username" type="text" class="form-control">
 
                     </div>
@@ -22,14 +26,14 @@
                     
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                        <label for="" class="form-label">Password</label>
+                        <label for="" class="form-label"><h4>Password</h4></label>
                         <input name="password" [(ngModel)]="password" type="password" name="" id="" class="form-control">
 
                     </div>
                     
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
 
-                        <button (click)="readValue()" class="btn btn-info">Login</button>
+                        <button (click)="readValue()" class="btn btn-dark">Login</button>
 
                     </div>
                     
@@ -44,6 +48,7 @@
                 </div>
             </div>
     </div>
+</div>
 </div>
 
 
