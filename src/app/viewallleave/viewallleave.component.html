@@ -17,6 +17,7 @@
                 <th scope="col">From-Date</th>
                 <th scope="col">To-Date</th>
                 <th scope="col">Apply-Date</th>
+                <th scope="col">Status</th>
                
               </tr>
             </thead>
@@ -29,7 +30,9 @@
                 <td>{{i.from_date}}</td>
                 <td>{{i.to_date}}</td>
                 <td>{{i.apply_date}}</td>
-               
+                <td>{{i.status}}</td>
+                <td><button (click)="acceptvalue(i.empid)" class="btn btn-success">Accept</button></td>
+                <td><button (click)="rejectvalue(i.empid)" class="btn btn-danger">Reject</button></td>
               </tr>
             </tbody>
           </table>

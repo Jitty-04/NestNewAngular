@@ -16,5 +16,41 @@ export class ViewallleaveComponent {
     )
   }
   data:any=[]
+  statusview:any={}
+  acceptvalue=(data:any)=>{
+    this.statusview=1;
+    let accept:any={"empid":data,"status":this.statusview}
+    this.api.update(accept).subscribe(
+      (response:any)=>{
+        if(response.status=="success"){
+          console.log(response)
+          console.log(response.status)
+          alert("success")
+          window.location.reload()
+
+        }
+        else{
+          alert("failed")
+        }
+      }
+    )
+  }
+  rejectvalue=(data:any)=>{
+    this.statusview=-1
+    let reject:any={"empid":data,"status":this.statusview}
+    this.api.update(reject).subscribe(
+      (response:any)=>{
+        if(response.status="success"){
+          console.log(response)
+          console.log(response.status)
+          alert("success")
+          window.location.reload()
+        }
+        else{
+          alert("failed")
+        }
+      }
+    )
+  }
 
 }
