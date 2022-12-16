@@ -36,6 +36,7 @@ import { AdmempentryComponent } from './admempentry/admempentry.component';
 
 
 
+
 const myRouter:Routes=[
   {
     path:"",
@@ -150,6 +151,7 @@ const myRouter:Routes=[
     AppleaveComponent,
     AdmnvistorComponent,
     AdmempentryComponent,
+  
   
   
     
