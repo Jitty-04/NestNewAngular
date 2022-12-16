@@ -32,6 +32,7 @@ import { EmpnavComponent } from './empnav/empnav.component';
 import { AppleaveComponent } from './appleave/appleave.component';
 import { AdmnvistorComponent } from './admnvistor/admnvistor.component';
 import { AdmempentryComponent } from './admempentry/admempentry.component';
+import { ViewstatusComponent } from './viewstatus/viewstatus.component';
 
 
 
@@ -118,6 +119,10 @@ const myRouter:Routes=[
   {
     path:"empentry",
     component:AdmempentryComponent
+  },
+  {
+    path:"statusview",
+    component:ViewstatusComponent
   }
 
 ]
@@ -151,6 +156,7 @@ const myRouter:Routes=[
     AppleaveComponent,
     AdmnvistorComponent,
     AdmempentryComponent,
+    ViewstatusComponent,
   
   
   
