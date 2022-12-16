@@ -21,7 +21,7 @@ readValue=()=>
     {
       console.log(response)
       if (response.status=="success") {
-        alert("security added successfully")
+        alert("Security Added Successfully")
       } else {
         alert("something wrong")
       }

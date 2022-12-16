@@ -31,6 +31,7 @@ import { EmphomeComponent } from './emphome/emphome.component';
 import { EmpnavComponent } from './empnav/empnav.component';
 import { AppleaveComponent } from './appleave/appleave.component';
 import { AdmnvistorComponent } from './admnvistor/admnvistor.component';
+import { AdmempentryComponent } from './admempentry/admempentry.component';
 
 
 
@@ -112,15 +113,12 @@ const myRouter:Routes=[
   {
     path:"visitentry",
     component:AdmnvistorComponent
+  },
+  {
+    path:"empentry",
+    component:AdmempentryComponent
   }
 
-
-
-
-
- 
-
-  
 ]
 
 @NgModule({
@@ -151,6 +149,7 @@ const myRouter:Routes=[
     EmpnavComponent,
     AppleaveComponent,
     AdmnvistorComponent,
+    AdmempentryComponent,
   
   
     

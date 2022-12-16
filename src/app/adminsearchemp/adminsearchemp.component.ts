@@ -21,7 +21,7 @@ searchData:any=[]
       {
         console.log(response)
         if (response.length==0) {
-          alert("Invalid emp code")
+          alert("Invalid Employee Code")
         } else {
           this.searchData=response;
         }
