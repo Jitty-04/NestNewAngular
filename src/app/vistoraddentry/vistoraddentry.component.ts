@@ -25,8 +25,10 @@ constructor(private api:ApiService){}
         console.log(response)
         if (response.status=="success") {
           alert("Visitor Entry success")
+          window.location.reload()
         } else {
           alert("not allowed")
+          window.location.reload()
         }
       }
     )

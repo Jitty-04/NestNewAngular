@@ -12,6 +12,7 @@ export class AdmempentryComponent {
       (response)=>
       {
         this.data=response;
+        
       }
     )
   }
@@ -28,10 +29,12 @@ export class AdmempentryComponent {
         if(response.length==0)
         {
           alert("invalid")
+          window.location.reload()
         }
         else{
           this.data=[];
           this.searchData=response
+          
         }
       }
     )

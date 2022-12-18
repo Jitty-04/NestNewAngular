@@ -78,7 +78,7 @@ export class ApiService {
   }
   applyLeave=(data:any)=>
   {
-    return this.http.post("http://localhost:8080/leaveapp",data)
+    return this.http.post("http://localhost:8080/leaveapply",data)
   }
   update=(data:any)=>
   {

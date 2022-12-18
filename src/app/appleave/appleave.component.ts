@@ -7,20 +7,18 @@ import { ApiService } from '../api.service';
   styleUrls: ['./appleave.component.css']
 })
 export class AppleaveComponent {
-  empid =""
-  leavetype =""
-  remarks = ""
-  from_date = ""
-  to_date =""
-  apply_date =""
-  status=""
-  
-   
-   constructor(private api:ApiService){}
+  empid:any=""
+  leavetype=""
+   remarks=""
+  from_date=""
+   to_date=""
+   constructor(private api:ApiService){
+     this.empid=localStorage.getItem("userInfo")
+   }
    readValue=()=>
    {
      let data:any={"empid":this.empid,"leavetype":this.leavetype,"remarks":this.remarks,"from_date":this.from_date,
-     "to_date":this.to_date,"apply_date":this.apply_date,"status":this.status}
+     "to_date":this.to_date}
      console.log(data)
      this.api.applyLeave(data).subscribe(
        (response:any)=>
@@ -28,6 +26,11 @@ export class AppleaveComponent {
          console.log(response)
          if (response.status=="success") {
            alert("leave added successfully")
+           this.empid=""
+           this.from_date=""
+           this.leavetype=""
+           this.remarks=""
+           this.to_date=""
          } else {
            alert("something wrong")
          }

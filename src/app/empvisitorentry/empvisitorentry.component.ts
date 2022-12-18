@@ -22,8 +22,10 @@ constructor(private api:ApiService){}
         console.log(response)
         if (response.status=="success") {
           alert("Successfully Entered")
+          window.location.reload()
         } else {
           alert("wrong data")
+          window.location.reload()
         }
       }
     )

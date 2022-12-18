@@ -22,8 +22,10 @@ readValue=()=>
       console.log(response)
       if (response.status=="success") {
         alert("Security Added Successfully")
+        window.location.reload()
       } else {
         alert("something wrong")
+        window.location.reload()
       }
     }
   )

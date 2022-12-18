@@ -28,6 +28,7 @@ export class AdmnvistorComponent {
         if(response.length==0)
         {
           alert("invalid")
+          window.location.reload()
         }
         else{
           this.data=[];
