@@ -25,6 +25,11 @@ export class ViewallleaveComponent {
         if(response.status=="success"){
           console.log(response)
           console.log(response.status)
+          this.api.leavePending(accept).subscribe(
+            (response:any)=>{
+              console.log(response)
+            }
+          )
           alert("success")
           window.location.reload()
 

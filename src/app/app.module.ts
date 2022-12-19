@@ -33,6 +33,7 @@ import { AppleaveComponent } from './appleave/appleave.component';
 import { AdmnvistorComponent } from './admnvistor/admnvistor.component';
 import { AdmempentryComponent } from './admempentry/admempentry.component';
 import { ViewstatusComponent } from './viewstatus/viewstatus.component';
+import { PendingleaveComponent } from './pendingleave/pendingleave.component';
 
 
 
@@ -123,6 +124,10 @@ const myRouter:Routes=[
   {
     path:"statusview",
     component:ViewstatusComponent
+  },
+  {
+    path:"pendingleaves",
+    component:PendingleaveComponent
   }
 
 ]
@@ -157,6 +162,7 @@ const myRouter:Routes=[
     AdmnvistorComponent,
     AdmempentryComponent,
     ViewstatusComponent,
+    PendingleaveComponent,
   
   
   
